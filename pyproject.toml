@@ -1,0 +1,34 @@
+requires = ["setuptools>=79.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "polybin"
+version = "0.1.0"
+description = "Smash formats together. Break assumptions. Build valid chaos. A polyglot builder for ICO, MP4, and ZIP files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["polyglot", "ico", "mp4", "zip", "docx", "pptx", "steganography"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+authors = [
+    { name = "viodoescyber" }
+]
+dependencies = [
+    "Pillow >= 11.2.1",
+    "setuptools>=80.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/viodoescyber/polybin"
+Repository = "https://github.com/viodoescyber/polybin"
+Issues = "https://github.com/viodoescyber/polybin/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+polybin = "polybin.cli:main"
